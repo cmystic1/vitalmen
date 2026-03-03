@@ -17,10 +17,10 @@ export default async function handler(req: any, res: any) {
 
 🧾 Order:
 ${items.map((item: any) =>
-    `• ${item.product.name} x ${item.quantity} - $${(
-      item.quantity * item.product.priceFrom
-    ).toFixed(2)}`
-  ).join('\n')}
+  `• ${item.product.name} x ${item.quantity} - $${(
+    item.quantity * item.product.priceFrom
+  ).toFixed(2)}`
+).join('\n')}
 
 💰 Total: $${total.toFixed(2)}
 `
@@ -32,7 +32,7 @@ ${items.map((item: any) =>
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         chat_id: process.env.TELEGRAM_CHAT_ID,
-        text: 'Hello from bot test!',
+        text: message,
       }),
     }
   )

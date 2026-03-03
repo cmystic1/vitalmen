@@ -44,7 +44,7 @@ const Checkout = () => {
       })
 
       clearCart()
-      navigate('/thank-you')
+      window.open('https://buy.norton.com/estore/checkOutV5?locale=en-us')  
     } catch (error) {
       console.error('Telegram error:', error)
     }

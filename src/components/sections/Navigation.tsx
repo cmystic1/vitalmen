@@ -75,8 +75,8 @@ const Navigation = () => {
           </button>
 
           <div className="absolute left-1/2 -translate-x-1/2">
-            <Link to="/" className="inline-block" aria-label="VitalMen Home">
-              <span className="text-white font-extrabold text-2xl md:text-3xl tracking-tight">VITALMEN</span>
+            <Link to="/" className="inline-block" aria-label="SilverVitality Home">
+              <span className="text-white font-extrabold text-2xl md:text-3xl tracking-tight">SILVER VITALITY</span>
             </Link>
           </div>
 

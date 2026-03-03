@@ -96,7 +96,7 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
             <div className="w-full lg:w-2/3">
               <span className="text-[48px] md:text-[72px] font-extrabold tracking-tighter text-[#1a1a1a] select-none leading-none block mb-8">
-                VITALMEN
+                SILVER VITALITY
               </span>
               <div className="flex flex-wrap gap-x-5 gap-y-2 mb-6">
                 {legal.map((l) => (
@@ -107,7 +107,7 @@ const Footer = () => {
               </div>
               <div className="space-y-3 text-[#4a4a4a] text-[12px] leading-relaxed max-w-2xl">
                 <p>
-                  Copyright © VitalMen Health Limited. All rights reserved. VitalMen is a trading name. Registered in England and Wales.
+                  Copyright © SilverVitality Health Limited. All rights reserved. SilverVitality is a trading name. Registered in England and Wales.
                 </p>
                 <p>
                   All medications are dispensed by a GPhC registered pharmacy and subject to clinical approval.

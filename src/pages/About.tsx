@@ -9,7 +9,7 @@ const About = () => (
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
           <span className="text-[#00cfc1] text-[12px] font-bold tracking-widest uppercase block mb-4">
-            About VitalMen
+            About SilverVitality
           </span>
           <h1 className="text-[42px] md:text-[56px] font-extrabold text-white uppercase mb-6 leading-tight">
             Men's Health Done Right
@@ -53,7 +53,7 @@ const About = () => (
     <section className="py-20 px-6 lg:px-16">
       <div className="max-w-[1280px] mx-auto">
         <h2 className="text-[32px] md:text-[38px] font-bold text-black mb-10 text-center">
-          Why men choose VitalMen
+          Why men choose Silver Vitality
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[

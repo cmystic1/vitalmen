@@ -21,7 +21,7 @@ const HeroSection = () => {
         }}
       >
         <img
-          src="src/assets/couple.png"
+          src="src/assets/image/couple.png"
           alt="couple"
           style={{
             position: 'absolute',

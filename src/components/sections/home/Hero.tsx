@@ -21,7 +21,7 @@ const HeroSection = () => {
         }}
       >
         <img
-          src="src/assets/image/couple.png"
+          src="/images/couple.png"
           alt="couple"
           style={{
             position: 'absolute',
@@ -32,7 +32,7 @@ const HeroSection = () => {
             zIndex: 1,
             opacity: 0.9,
           }}
-        />        {/* LEFT */}
+        />
         <div
           style={{
             position: 'relative',
